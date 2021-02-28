@@ -22,7 +22,10 @@ public class CadastroService {
 
         }
         else if(cliente.getClass() == PessoaJuridica.class) {
-            System.out.println("Pessoa Jurídica detectada!");
+            System.out.println("Qual o nome da empresa?");
+            cliente.setNome(input.nextLine());
+            System.out.println("Qual o seu CNPJ?");
+            ((PessoaJuridica) cliente).setCnpj(input.nextLine());
         }
 
         return cliente;

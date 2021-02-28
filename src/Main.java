@@ -27,7 +27,6 @@ public class Main {
 
         }
 
-
         while(conta.operacao != 0) {
             System.out.println("\n1- Saque\n2- Depósito\n3- Extrato\n0- Sair");
             conta.operacao = conta.input.nextInt();
@@ -35,10 +34,20 @@ public class Main {
             switch(conta.operacao){
                 case 1:
                     conta.cliente = conta.operacaoService.saque(conta.cliente);
-                    System.out.println("Seu novo saldo é: "+conta.cliente.getSaldo());
+                    break;
+                case 2:
+                    conta.cliente = conta.operacaoService.deposito(conta.cliente);
+                    break;
+                case 3:
+                    conta.cliente = conta.operacaoService.extrato(conta.cliente);
                     break;
                 default:
-                    System.out.println("Opção inválida!");
+                    if(conta.operacao != 0){
+                        System.out.println("Opção inválida!");
+                    }
+                    else{
+                        System.out.println("Finalizando sistema...");
+                    }
 
             }
 
