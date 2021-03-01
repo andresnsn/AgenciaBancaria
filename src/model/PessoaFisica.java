@@ -5,6 +5,9 @@ public class PessoaFisica extends Cliente{
     String cpf;
     String dataDeNascimento;
 
+    /* Aqui neste método construtor, eu determino que durante a instanciação do objeto,
+     * um valor de saldo será adicionado a ele como requisito.*/
+
     public PessoaFisica() {
         super.saldo = 200.0;
     }

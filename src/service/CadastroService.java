@@ -3,10 +3,16 @@ package service;
 import model.Cliente;
 import model.PessoaFisica;
 import model.PessoaJuridica;
-
 import java.util.Scanner;
 
 public class CadastroService {
+
+    /*
+    Aqui eu uso a mutabilidade dos objetos PF e PJ, que herdam de Cliente, implementando polimorfismo neste único método
+    que pode receber os dois objetos. Uma vez que o objeto entra como atributo do parâmetro, é realizada
+    a checagem do objeto que entrou na operação e, dependendo do tipo do objeto, a operação determinada
+    para ele é acionada.
+     */
 
     Scanner input = new Scanner(System.in);
 

@@ -3,10 +3,12 @@ package service;
 import model.Cliente;
 import model.PessoaFisica;
 import model.PessoaJuridica;
-
 import java.util.Scanner;
 
 public class OperacaoService {
+
+    //Nesta classe, vale o mesmo comentário realizado na classe "CadastroService".
+    //Aqui estão os métodos de operação da conta.
 
     Scanner input = new Scanner(System.in);
 

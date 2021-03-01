@@ -3,8 +3,12 @@ package auxiliar;
 import model.Cliente;
 import service.CadastroService;
 import service.OperacaoService;
-
 import java.util.Scanner;
+
+/*
+Esta classe inicializa todos os componentes básicos que a classe "AppStart", que inicializa a aplicação,
+precisa para funcionar.
+ */
 
 public class ClasseInjetoraDeDependencias {
 
